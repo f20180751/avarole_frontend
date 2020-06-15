@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+      *{
+        font-family: 'Comfortaa', cursive;
+        
+        }
+      .bg-company-red {
+        background-color: rgb(248,250,251) !important;
+        height: 6.5rem !important;
+      } 
+      .navbar-title {
+        color: rgb(47, 122, 78) !important;
+        font-family: 'Comfortaa', cursive;
+        font-size: 2.3rem;
+      } 
+      a{
+        color: #333;
+        text-decoration: none;
+        }  
+      section {
+        padding: 30px 20px 20px 20px;
+        background-color: rgb(242, 255, 237) ;
+      }
+      footer {
+        padding: 20px;
+        background-color:rgb(248,250,251);
+        text-align: center;
+      }
+      #search-btn:hover {
+        filter: alpha(opacity=90);
+        opacity: 0.9;
+      } 
+      .align-content-xl-start {
+        top: 355px;
+        left: 575px;
+      }
+      .wrapper {
+        justify-content: center;
+        align-items: center;
+        /* display: inline-block; */
+      }
+      .btn-lg{
+        width: 20rem;
+      }
+      .btn-outline-success{
+        width: 16rem;
+        height: 4rem;
+        /* flex-basis: 50px; */
+      }
+      #container-side{
+        width: 300px;
+        border: 7px solid rgb(66,152,36);
+        padding: 50px;
+        margin: 20px;
+        margin: auto;
+        background-color:rgb(248,250,251);
+        border-radius: 20px ;
+      }
+      #container-inside{
+        width: 500px;
+        border: 5px darkslategray;
+        padding: 30px;
+        margin: 10px;
+        margin: auto;
+        position: relative;
+      }
+      #info-enter{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .wrapper{
+        background-color: rgb(242, 255, 237);
+      }
+      .list-group-flush{
+        background-color: rgb(175,178,183) !important;
+      }
+            
+      .search-field{
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        display:block;
+        /* width:45%; */
+        padding:11px 7px;
+        padding-right:43px;
+        background:white;
+        color: rgb(66,152,36);
+        border:1px solid rgb(66,152,36);
+        font-size:1.6em;
+        -moz-border-radius:1px;
+        -webkit-border-radius:4px;
+        border-radius:1px;
+        -moz-box-shadow:inset 0 1px 2px  rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
+        -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
+        box-shadow:inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-company-red">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-title navbar-brand" href="#">avarole</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      
+
+      <div class="wrapper row mb-5">
+        <div class=" first col-md-6 col-lg-6 col-12">
+          <h3 >Want to be a seller?</h3>
+          <button class="btn-lg btn-success navbar-btn">Contact Us </button>
+          <img
+            src="Artboard 61.png"
+            alt=""
+            class="img-fluid"
+          /><!--img-fluid is imp so that images become responsive to grid layout-->
+        </div>
+
+
+
+        <div id="container-side" class="  row col-md-6 col-lg-6 col-12" >
+            <div class="col-6">
+                <button type="button" style="font-size: 22px;" class="btn btn-outline-success">Admin</button>
+            </div>
+            <div class="col-6">
+                <button type="button" style="font-size: 22px;" class="btn btn-outline-success">Seller</button>
+            </div>
+              
+            <div id="container-inside">
+              <div style="font-size: 20px;" id="info-enter">
+                Enter your email & password below
+              </div>
+              <ul class="list-group list-group-flush">
+              
+                <input type="search" id="query" class="search-field " placeholder=" Email Address" >
+                <input type="search" id="query" class="search-field" placeholder=" Password">
+              </ul>
+
+              <button type="button" style="margin-left: 5.5rem; position: relative; margin-top: 20px; font-size: 22px;" class="btn btn-outline-success">Submit</button>
+              
+            </div>
+        
+          </div>
+              
+            <footer>
+              <p>
+                Copyright &copy; 2020, All rights reserved
+              </p>
+            </footer>
+          </div>
+          <hr />
+        
+      </div>
+    </section>
+
+    <div class="row"></div>
+  </body>
+</html>
