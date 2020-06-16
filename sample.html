@@ -1,0 +1,39 @@
+<html>
+
+
+
+<button onclick="s()">Seller</button>
+<button onclick="a()">Admin</button>
+<br><br>
+<div id="se" style="display:none;">
+This is form for Seller<br><br>
+<form>
+Seller name:<input /><br><br>
+Seller pass:<input/>
+</form>
+</div>
+
+<div id="ad">
+This is form Admin<br><br>
+<form>
+Admin Name:<input/><br><br>
+Admin Pass:<input/>
+</form>
+</div>
+
+
+<script>
+var s=function(){
+document.getElementById("se").style.display="block";
+document.getElementById("ad").style.display="none";
+}
+
+var a=function(){
+document.getElementById("ad").style.display="block";
+document.getElementById("se").style.display="none";
+}
+
+</script>
+
+
+</html>
