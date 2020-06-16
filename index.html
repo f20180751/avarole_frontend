@@ -105,9 +105,9 @@
       .wrapper{
         background-color: rgb(242, 255, 237);
       }
-      .list-group-flush{
+      /* .list-group-flush{
         background-color: rgb(175,178,183) !important;
-      }
+      } */
             
       .search-field{
         -moz-box-sizing:border-box;
@@ -180,18 +180,27 @@
               <ul class="list-group list-group-flush">
               
               <div id="se" style="display:none;">
-                  <input  class="search-field form-control" type="email" placeholder="  Email Address" name="email" required >
-                  <input class="form-control search-field" type="password" placeholder="  Password" name="password" required>
+                <form action="">  
+                  <input  class="search-field form-control" type="email" placeholder=" Seller's Email Address" name="email" required >
+                  <input class="form-control search-field" type="password" placeholder=" Seller's Password" name="password" required>
+
+                  <button type="submit" style="margin-left: 5.5rem; position: relative; margin-top: 20px; font-size: 22px;" class="btn-lg btn-outline-success">Login</button>
+                </form>
               </div>
 
               <div id="ad" >
-                <input  class="search-field form-control" type="email" placeholder="  Email Address" name="email" required >
-                <input class="form-control search-field" type="password" placeholder="  Password" name="password" required>
+                <form action="">
+                  <input  class="search-field form-control" type="email" placeholder=" Admin's Email Address" name="email" required >
+                  <input class="form-control search-field" type="password" placeholder=" Admin's Password" name="password" required>
+
+                  <button type="submit" style="margin-left: 5.5rem ; position: relative; margin-top: 20px; font-size: 22px;" class="btn-lg btn-outline-success">Login</button>
+                </form>
+                
               </div>
 
               </ul>
 
-              <button type="submit" style="margin-left: 5.5rem; position: relative; margin-top: 20px; font-size: 22px;" class="btn-lg btn-outline-success">Login</button>
+              
               
             </div>
         
